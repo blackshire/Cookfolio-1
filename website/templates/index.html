@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+  {% if recipe_count == 0 %}
+    <h4 align="center">You don't have any recipes yet. Create some to get started!</h4>
+  {% endif %}
+
+<div id="recipeList">
+  <h4 align="center">My Recipes</h4>
+  <br>
+  <div class="row">
+    {% for recipe in user.recipes %}
+      <div class="col-5 w-100">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ recipe.name }}</h5>
+            <p class="card-text">{{ recipe.description[0:26] }}...</p>
+            <a href="/recipe/{{ recipe.id }}" class="btn btn-success">View Recipe</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+{% endblock %}

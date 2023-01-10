@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}New Recipe{% endblock %}
+
+{% block content %}
+
+
+<div class="card" style="max-width: 75%;">
+  <div class="card-body">
+    <h4 align="center">New Recipe</h4>
+    <form method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input name="name" type="text" class="form-control" id="name" placeholder="Enter name">
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input name="description" type="text" class="form-control" id="description" placeholder="Enter description">
+      </div>
+      <div class="form-group">
+        <label for="servings">Servings</label>
+        <input name="servings" type="text" class="form-control" id="servings" placeholder="Enter number of servings">
+      </div>
+      <div class="form-group">
+        <label for="cook-time">Cook Time</label>
+        <input name="cook-time" type="text" class="form-control" id="cook-time" placeholder="Enter cook time">
+      </div>
+      <div class="form-group" id="ingredients">
+        <label for="ingredients">Ingredients</label>
+        <div class="form-row ingredient mb-1">
+          <div class="col">
+            <input name="ingredient-number" type="text" class="form-control" id="ingredient-number" placeholder="Enter quantity">
+          </div>
+          <div class="col">
+            <select name="ingredient-unit" class="form-control" id="ingredient-unit">
+              <option>Teaspoon</option>
+              <option>Tablespoon</option>
+              <option>Cup</option>
+              <option>Ounce</option>
+              <option>Pint</option>
+              <option>Quart</option>
+              <option>Gallon</option>
+              <option>Pound</option>
+              <option>Slice</option>
+              <option>Each</option>
+            </select>
+          </div>
+          <div class="col">
+            <input name="ingredient-description" type="text" class="form-control" id="ingredient-description" placeholder="Enter ingredient">
+          </div>
+          <div class="col-auto">
+            <button type="button" class="btn btn-secondary add-ingredient" >+</button>
+            <button type="button" class="btn btn-secondary remove-ingredient" >-</button>
+
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="directions">Directions</label>
+        <textarea name="directions" class="form-control" id="directions" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="nutrition">Nutrition</label>
+        <textarea name="nutrition" class="form-control" id="nutrition" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="public">Make recipe public?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" name="public" id="public">
+          <label class="form-check-label" for="public">
+            Yes
+          </label>
+        </div>
+      </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

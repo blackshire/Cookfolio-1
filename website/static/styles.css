@@ -1,0 +1,306 @@
+
+/*
+#6dc15c - light green
+#12250e - dark green
+#fcfcf7 - v light yellow
+#fdf896 - med yellow
+#e9df16 - dark yellow
+ */
+
+#defaultStyle {
+    background: #fcfcf7;
+}
+
+/* To turn <a> links into buttons */
+.btn-custom {
+  background-color: #6dc15c;
+  border-color: #6dc15c;
+  color: #6dc15c;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.btn-custom:hover {
+  background-color: #ff9000; /* lighter orange */
+  text-decoration: none;
+  color: #12250e;
+}
+
+
+
+.titles {
+    color: #12250e;
+    font-family: Times New Roman;
+    font-weight: bold;
+}
+
+/* Custom navbar colors from https://work.smarchal.com/twbscolor/4.0.0/css/6dc15c58944bfdfdfd12250e1 */
+
+.head-title{
+    color: #fcfcf7;
+    margin-right: 25px;
+    font-family: Times New Roman;
+}
+
+.head-title:hover {
+    color:#12250e;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.navbar {
+  background-color: #6dc15c;
+}
+.navbar .navbar-brand {
+  color: #fdfdfd;
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: #12250e;
+}
+.navbar .navbar-text {
+  color: #fdfdfd;
+}
+.navbar .navbar-text a {
+  color: #12250e;
+}
+.navbar .navbar-text a:hover,
+.navbar .navbar-text a:focus {
+  color: #12250e;
+}
+.navbar .navbar-nav .nav-link {
+  color: #fdfdfd;
+  border-radius: .25rem;
+  margin: 0 0.25em;
+}
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+  color: #12250e;
+}
+.navbar .navbar-nav .dropdown-menu {
+  background-color: #6dc15c;
+  border-color: #58944b;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+  color: #fdfdfd;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+.navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+  color: #12250e;
+  background-color: #58944b;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-divider {
+  border-top-color: #58944b;
+}
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+  color: #12250e;
+  background-color: #58944b;
+}
+.navbar .navbar-toggler {
+  border-color: #58944b;
+}
+.navbar .navbar-toggler:hover,
+.navbar .navbar-toggler:focus {
+  background-color: #58944b;
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+  color: #fdfdfd;
+}
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+  border-color: #fdfdfd;
+}
+.navbar .navbar-link {
+  color: #fdfdfd;
+}
+.navbar .navbar-link:hover {
+  color: #12250e;
+}
+
+@media (max-width: 575px) {
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #fdfdfd;
+  }
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #12250e;
+  }
+  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #12250e;
+    background-color: #58944b;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #fdfdfd;
+  }
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #12250e;
+  }
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #12250e;
+    background-color: #58944b;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #fdfdfd;
+  }
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #12250e;
+  }
+  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #12250e;
+    background-color: #58944b;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #fdfdfd;
+  }
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #12250e;
+  }
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #12250e;
+    background-color: #58944b;
+  }
+}
+
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+  color: #fdfdfd;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+  color: #12250e;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+  color: #12250e;
+  background-color: #58944b;
+}
+
+/* Navbar Customizations for the toggler button */
+.custom-toggler.navbar-toggler {
+            border-color: #12250e;
+}
+
+.custom-toggler .navbar-toggler-icon {
+            background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(18, 37, 14, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* For login and sign up screens to center and display entry fields */
+.user-data {
+    max-width: 100%;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+/* Footer and body coloring */
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+#content {
+  background-color: #fcfcf7;
+  flex: 1;
+  padding: 20px;
+}
+
+#footer {
+  background-color: #12250e;
+  padding: 20px;
+}
+
+#show-border {
+    border: 1px solid black;
+}
+
+.recipe-prep {
+    background: #fdf896;
+    color: #12250e;
+}
+
+/* for ingredients list on recipe.html */
+.list-group-item.done {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+
+
+/* for the forms on the new_recipe.html page */
+.card {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form-row > .col {
+  flex: 1;
+}
+
+#ingredients .form-row > .col:first-of-type {
+  width: 15%;
+}
+
+#ingredients .form-row > .col:nth-of-type(2) {
+  width: 20%;
+}
+
+#ingredients .form-row > .col:nth-of-type(3) {
+  width: 55%;
+}
+
+#ingredients .form-row > .col:last-of-type {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ingredients .form-row > .col:last-of-type .btn {
+  margin: 0 5px;
+}
+
+#ingredients .form-row > .col:last-of-type .btn:first-of-type {
+  margin-left: 0;
+}
+
+#ingredients .form-row > .col:last-of-type .btn:last-of-type {
+  margin-right: 0;
+}

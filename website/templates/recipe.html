@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}Log In{% endblock %}
+
+{% block content %}
+<h1 align="center">{{ recipe.name }}</h1>
+<p align="center">{{ recipe.description }}</p>
+
+<!-- Image for recipe TODO:This is just a placeholder -->
+<div align="center">
+    <img src="{{ url_for('static', filename='Cheeseburger.png') }}" alt="Burger" class="img-thumbnail w-75 h-auto">
+</div>
+
+<!-- Servings and cook time under image -->
+<div class="container">
+  <div class="row justify-content-center">
+    {% if recipe.servings > 1 %}
+    <div class="col-4 border border-dark recipe-prep" align="center">{{ recipe.servings }} servings</div>
+    {% else %}
+    <div class="col-4 border border-dark recipe-prep" align="center">{{ recipe.servings }} serving</div>
+    {% endif %}
+    <div class="col-4 border border-dark recipe-prep" align="center">{{ recipe.cook_time }} minutes cook time</div>
+  </div>
+</div>
+
+<!-- Cross-off enabled ingredient list -->
+<div class="container mt-5 w-50">
+  <h2 align="center">Ingredients</h2>
+  <p align="center">(Tap to cross off once completed)</p>
+  <ul class="list-group">
+    {% if ingredients %}
+      {% for i in ingredients %}
+        <li class="list-group-item">{{ i }}</li>
+      {% endfor %}
+    {% endif %}
+  </ul>
+</div>
+
+<div class="card mt-5 mx-auto" style="width: 75%;">
+  <h2 align="center">Directions</h2>
+  <div class="card-body">
+    <p class="card-text">&nbsp;&nbsp;{{ recipe.directions }}</p>
+  </div>
+</div>
+
+<div class="card mt-5 mx-auto" style="width: 75%;">
+  <h2 align="center">Nutrition</h2>
+  <div class="card-body">
+    <p class="card-text">&nbsp;&nbsp;{{ recipe.nutrition }}</p>
+  </div>
+</div>
+
+<!-- TODO: add a toggle to remove recipe from public if it belongs to the user
+     TODO: and also to delete the recipe if it belongs to the user -->
+
+{% endblock %}
